@@ -41,6 +41,7 @@ class UsersController < ApplicationController
 
 	def destroy # for destroy something
 		@user = User.destroy(params[:id])
+		redirect_to signup_url
 	end
 
 end
