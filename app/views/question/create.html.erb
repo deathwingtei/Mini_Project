@@ -1,1 +1,8 @@
-<h1>This is Your cat</h1>
+<div class="row">
+  <div class="span8 offset1">
+		<h1>This is Your cat</h1>
+		<%= image_tag(@cat.pic, :alt => "cat") %>
+		<br /><br />
+		<%= @cat.name %>
+	</div>
+</div>
