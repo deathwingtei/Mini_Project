@@ -1,0 +1,40 @@
+<% provide(:title, "Should you cat") %>
+
+<div class="row">
+  <div class="span8 offset1">
+    <h1>What should you pet cats.</h1>
+    <%= form_for(:question, url: question_index_path) do |f| %>
+
+      What color do you like?<br/>
+      <select class="" id="color" name="color">            
+      <option value="red">Red</option>
+      <option value="green">Green</option>
+      <option value="blue">Blue</option>
+      <option value="yellow">Yellow</option>
+      <option value="white">White</option>
+      <option value="black">Black</option>
+      <option value="violet">Violet</option>
+      </select>
+
+      <br/>
+      What hobbie type do you like?<br/>
+      <select class="" id="hobbie" name="hobbie">            
+      <option value="play">Play Game</option>
+      <option value="sport">Sport</option>
+      <option value="read">Reading a book</option>
+      </select>
+      
+      <br/>
+      What Size do you like?<br/>
+      <select class="" id="size" name="size">            
+      <option value="small">Small</option>
+      <option value="medium">Medium</option>
+      <option value="large">Large</option>
+      </select>
+
+      <br/>
+      <br/>
+      <%= f.submit "Let show my cat!!!", class: "btn btn-large btn-primary" %>
+    <% end %>
+  </div>
+</div>
