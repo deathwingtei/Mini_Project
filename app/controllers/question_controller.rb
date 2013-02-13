@@ -131,8 +131,9 @@ class QuestionController < ApplicationController
 			@cat = Cat.find(62)
 		elsif params[:color] == "7" && params[:hobbie] == "3" && params[:size] == "3"
 			@cat = Cat.find(63)
-
-
+	    else 
+	    	flash.now[:error] = 'What !!!!'
+      		render 'new'
 		end
 
 	end

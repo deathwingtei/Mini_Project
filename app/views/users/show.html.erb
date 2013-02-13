@@ -13,13 +13,13 @@
 </dl>
 
 <div class="form-actions">
-  <%= link_to t('.back', :default => t("helpers.links.back")),
+  <%= link_to t('.back', :default => t("helpers.links.Show_all_user")),
               users_path, :class => 'btn'  %>
-  <%= link_to t('.edit', :default => t("helpers.links.edit")),
+  <%= link_to t('.edit', :default => t("helpers.links.edit_my_account")),
               edit_user_path(@user), :class => 'btn' %>
               <br />
               <br />
- <%= link_to t('.question', :default => t("helpers.links.questionair")),
+ <%= link_to t('.question', :default => t("helpers.links.Start_Cat_application")),
               question_index_path,
               :class => 'btn btn-warning' %>
 
